@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/hospital_img">
+
+    <TextView
+        android:id="@+id/popa_alexandra_tv_testari_covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/testari_covid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_tv_testari_covid"
+        android:id="@+id/popa_alexandra_list_fl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/popa_alexandra_btn_afisare_centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/afiseaza_centrele"
+        android:textColor="#B7070505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_list_fl"
+        app:layout_constraintBottom_toTopOf="@id/popa_alexandra_btn_afisare_rezultate"/>
+
+    <Button
+        android:id="@+id/popa_alexandra_btn_afisare_rezultate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/afiseaza_rezultatele"
+        android:textColor="#B7070505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_btn_afisare_centre"
+        app:layout_constraintBottom_toTopOf="@id/popa_alexandra_btn_adaugare_centre"/>
+
+    <Button
+        android:id="@+id/popa_alexandra_btn_adaugare_centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/adaugare_centre"
+        android:textColor="#B7070505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_btn_afisare_rezultate"
+        app:layout_constraintBottom_toTopOf="@id/popa_alexandra_btn_grafic"/>
+
+    <Button
+        android:id="@+id/popa_alexandra_btn_grafic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/grafic"
+        android:textColor="#B7070505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_btn_adaugare_centre"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

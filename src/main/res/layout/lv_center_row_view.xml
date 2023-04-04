@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/popa_alexandra_iv_spital"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/hospital_pictogram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/hospital_image"
+        app:layout_constraintEnd_toStartOf="@id/popa_alexandra_tv_denumire_spital"/>
+
+    <TextView
+        android:id="@+id/popa_alexandra_tv_denumire_spital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/denumire"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/popa_alexandra_iv_spital"
+        app:layout_constraintEnd_toStartOf="@id/popa_alexandra_tv_judet_spital"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#B7070505"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/popa_alexandra_tv_adresa_spital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adresa"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/popa_alexandra_iv_spital"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_tv_denumire_spital"
+        android:textColor="#B7070505"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toStartOf="@id/popa_alexandra_tv_telefon_spital"/>
+
+    <TextView
+        android:id="@+id/popa_alexandra_tv_judet_spital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/judet"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/popa_alexandra_tv_denumire_spital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#B7070505"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/popa_alexandra_tv_telefon_spital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefon"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/popa_alexandra_tv_adresa_spital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_alexandra_tv_judet_spital"
+        android:textColor="#B7070505"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
